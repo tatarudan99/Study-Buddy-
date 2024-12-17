@@ -1,0 +1,16 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333; /* Dark Grey Text */
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  font-size: 2em; /* Increase font size for better visibility */
+  font-weight: 700; /* Stronger bold for a modern, bold look */
+  color: #1a1a1a !important; /* Darker grey/near black for a clean, modern appearance */
+  font-family: 'Roboto', sans-serif; /* Modern sans-serif font for a clean look */
+  text-decoration: none !important; /* Ensure no underline on the logo link */
+}

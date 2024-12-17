@@ -1,0 +1,57 @@
+/* Home Page Styles */
+
+/* Container Styles */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 130px);
+    padding: 0 20px;
+
+    background-color: #ffffff;
+  }
+
+  /* Title Styles */
+  .home-title {
+    font-size: 3em;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Description Styles */
+  .home-description {
+    font-size: 1.3em;
+    color: #333333;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+
+  /* Start Button Styles */
+  .start-button {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .start-button:hover {
+    background-color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .start-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.15);
+  }

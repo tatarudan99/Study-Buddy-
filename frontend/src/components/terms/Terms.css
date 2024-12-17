@@ -1,0 +1,32 @@
+.terms-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 100px auto;
+  color: #333;
+}
+
+.terms-container h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.intro-text, .acknowledgment {
+  margin-bottom: 20px;
+}
+
+.terms-list {
+  list-style-type: decimal;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.terms-list li {
+  margin-bottom: 10px;
+}
+
+.terms-list strong {
+  font-weight: bold;
+}

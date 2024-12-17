@@ -1,0 +1,59 @@
+/* src/components/Navbar.css */
+
+/* Navbar Container */
+.navbar {
+  background-color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  height: 70px;
+  box-sizing: border-box;
+}
+
+/* Navbar Logo */
+.navbar-logo a {
+  font-size: 2em;
+  font-weight: 700;
+  background-color: #1a1a1a !important;
+  color: #faf3f3 !important;
+  font-family: 'Poppins', poppins;
+  text-decoration: none !important;
+}
+
+
+
+/* Navbar Links Container */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/* Navbar Links */
+.navbar-links li {
+  margin-left: 30px;
+}
+
+.navbar-links a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #000000;
+}

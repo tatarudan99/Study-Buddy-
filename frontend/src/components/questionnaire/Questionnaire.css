@@ -1,0 +1,161 @@
+/* src/components/questionnaire.css */
+
+/* Container Styling */
+.questionnaire-container {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 150px 20px;
+}
+
+/* Title Styling */
+.questionnaire-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0de;
+}
+
+/* Filled Portion of the Progress Bar */
+.progress-bar-filled {
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    to right,
+    #ec797b, /* Starting color (red) */
+    #f9d423 50%, /* Middle color (yellow) */
+    #00b66a 100% /* Ending color (blue) */
+  );
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+
+/* Question Step */
+.question-step {
+  margin-bottom: 30px;
+}
+
+.question-step h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+/* Input Fields */
+.question-step input[type='text'],
+.question-step textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.question-step textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Labels and Inputs */
+.question-step label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--text-color);
+}
+
+/* Standard checkboxes and radio buttons */
+.question-step label input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+/* Custom checkbox */
+.question-step label input[type='checkbox'] {
+  appearance: auto;
+}
+
+/* Custom radio button */
+.question-step label input[type='radio'] {
+  appearance: auto;
+}
+
+/* Error Messages */
+.error-message {
+  color: var(--error-color);
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+/* Navigation Buttons Container */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-top: 20px;
+}
+
+/* Back Button Styles */
+.navigation-buttons .back-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #ccc; /* grey */
+  color: #333; /* Dark */
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons .back-button:hover {
+  background-color: #999; /* darker grey */
+}
+
+/* Next Button Styles */
+.navigation-buttons .next-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #0077b6;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons .next-button:hover {
+  background-color: #005f8d; /* blue */
+}
+
+/* Optional: Disabled Button State */
+.navigation-buttons .next-button:disabled,
+.navigation-buttons .back-button:disabled {
+  background-color: #e0e0e0; /* Light grey */
+  cursor: not-allowed;
+}
